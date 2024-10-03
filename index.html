@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Welcome to my page</h1>
+    <h1 id="person1-name"></h1>
+    <h1 id="person1-age"></h1>
+    <h1 id="person1-occupation"></h1>
+    <h1 id="person1-motto"></h1>
+    <h1 id="person1-address"></h1>
+ 
+
+    <script>
+       //Input
+        const person1 ={
+            name:"Luel Dawn",
+            age:20,
+            occupation:"Student",
+            motto:"If you dont take a risk, you cant create Future",
+            address:"Lindaban, Manolo Fortich, Bukidnon"     
+        }
+
+        //Process and Output
+
+        //Solution 1: Display via console.log
+        console.log("Name: " + person1.name);
+        console.log("Age: "  + person1.age);
+        console.log("Occupation: " + person1.occupation);
+        console.log("Motto: " + person1.motto);
+        console.log("Address: " + person1.address);
+
+        //Solution 2: Display via HTML
+        document.getElementById("person1-name").innerHTML = "Name: " + person1.name;
+        document.getElementById("person1-age").innerHTML = "Age: " + person1.age;
+        document.getElementById("person1-occupation").innerHTML = "Occupation: " + person1.occupation;
+        document.getElementById("person1-motto").innerHTML = "Motto: " + person1.motto;
+        document.getElementById("person1-address").innerHTML = "Address: " + person1.address;
+
+    </script>
+</body>
+</html>
